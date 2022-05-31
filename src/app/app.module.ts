@@ -4,15 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { TodosComponent } from './MyComponent/todos/todos.component';
 import { TodoItemComponent } from './MyComponent/todo-item/todo-item.component';
+import { AddTodoComponent } from './MyComponent/add-todo/add-todo.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodosComponent,
-    TodoItemComponent
+    TodoItemComponent,
+    AddTodoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
